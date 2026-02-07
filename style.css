@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+*{
+  font-family: "Source Serif 4", serif;
+    font-weight: 400;
+
+}
+body{
+    background: rgb(19, 17, 17);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+body::after{
+    content: '';
+    background-color: rgba(3, 78, 3, 0.855);
+    clip-path: circle(50% at left 70%);
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: -2;
+}
+body::before{
+    content: '';
+    background-color: rgba(3, 78, 3, 0.855);
+    clip-path: circle(40% at right 20%);
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: -2;
+}
+.container{
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 600px;
+    width: 500px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container h2{
+    color: white;
+    font-size: 60px;
+    display: inline;
+    margin-bottom: 0;
+
+}
+.container .soft{
+    color: rgb(66, 238, 66);
+    font-size: 20px;
+    letter-spacing: 5px;
+    margin: 0 0;
+}
+.container hr{
+    width: 80%;
+    margin-bottom: 0;
+}
+.container .front{
+    color: white;
+    margin-bottom: 0px;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+.content{
+    width: 90%;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    margin: 0 0;
+    align-items: center;
+}
+.content a{
+    text-decoration: none;
+    display: block;
+    border: solid rgba(0, 0, 0, 0.752); 10px;
+    padding: 10px 160px;
+    border-radius:5px;
+    color: white;
+    margin: 10px;
+    background-color:rgba(255,255,255,0.1);
+}
+.content li{
+   list-style: none;
+}
+.content ul{
+    margin: 0;
+    display: block;
+    padding-left: 0;
+}
+.content a:hover{
+    background-color: rgba(0, 255, 0, 0.625);
+    transform: scale(1.1);
+}
+.content i{
+    padding: 0 5px;
+}
